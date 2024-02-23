@@ -35,7 +35,11 @@ public class Teszt {
     }
     
     public static boolean rendezettE(int[] sor) {
-        return false;
+        int i = 0;
+        while(i < sor.length-1 && sor[i] <= sor[i+1]){
+        i++;}
+        return i >= sor.length-1;
+        
         
     }
     
